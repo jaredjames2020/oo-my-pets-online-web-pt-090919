@@ -10,10 +10,6 @@ class Owner
     @@all << self
   end
   
-  def name(name)
-    @name = name
-  end
-  
   def say_species
     puts @species
   end
