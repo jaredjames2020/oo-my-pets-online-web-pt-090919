@@ -1,6 +1,6 @@
 class Owner
   # code goes here
-  attr_accessor :name, :species
+  attr_writer :name, :species
   #attr_reader :species
   
   @@all = []
@@ -9,6 +9,8 @@ class Owner
     @species = species
     @@all << self
   end
+  
+  
   
   def say_species
     puts @species
