@@ -1,6 +1,6 @@
 class Owner
   # code goes here
-  attr_reader :name
+  attr_writer :name
   
   @@all = []
   
@@ -10,7 +10,7 @@ class Owner
   end
   
   def say_species
-    @species
+    puts @species
   end
   
   def self.all
