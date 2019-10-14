@@ -50,6 +50,13 @@ class Owner
   def feed_cats
     Cat.all.select {|cat| cat.mood = "happy"}
   end
+  
+  def sell_pets
+     Dog.all.select {|dog| dog.mood = "nervous"}
+     Cat.all.select {|cat| cat.mood = "nervous"}
+     Dog.all.select {|dog| dog.owner = nil}
+     Cat.all.select {|cat| cat.owner = nil}
+     
     
   
 end
